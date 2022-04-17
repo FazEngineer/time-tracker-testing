@@ -20,11 +20,8 @@ jobs:
     - name: Install dependencies
       run: npm install --prefix ./cypress_automation cypress
 
-    - name: Cypress run
-      uses: cypress-io/github-action@v2
-      with:
-          # Specify chrome
-          browser: chrome
+    - name: Test
+      test: npn run test --prefix ./cypress_automation
 
     - name: Stop containers
       if: always()
