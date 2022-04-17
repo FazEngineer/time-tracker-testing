@@ -117,7 +117,6 @@ See `Actions` tab in Github repository for test workflow.
 ## 7. Non-functional tests
 ### What is Accessibility?
 The practice of making a product that is usable by everyone, with or without a disability.
-This will enable more users who are able to use your product
 Accessibility issues can cause a loss of users which in turn loss of money to the business which is why it’s a serious issue that needs to be addressed.
 
 - Accessibility test with cypress-axe
