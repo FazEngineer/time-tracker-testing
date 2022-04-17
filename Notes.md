@@ -13,7 +13,7 @@
 
 ## 2. Define and document the acceptance criteria and testing strategy 
 
-User story 1: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.
+**User story 1**: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.
 
 Scenario 1: Editing an existing session name
 
@@ -22,7 +22,7 @@ And the session contains a valid name
 When the user updates the session name
 Then the new session name is displayed
 
-User story 2: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
+**User story 2**: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
 
 Scenario 2: Editing an existing session duration
 
@@ -31,7 +31,7 @@ And the session contains a valid duration
 When the user updates the session duration
 Then the new session duration is displayed
 
-User story 3: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
+**User story 3**: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
 
 Scenario 3: Deleting an existing session
 
@@ -39,7 +39,7 @@ Given there is an existing session on the View Saved Sessions page
 When the user deletes the session
 Then the session is not displayed
 
-User story 4: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
+**User story 4**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
 Scenario 4: Searching for an known session by name
 
@@ -48,7 +48,7 @@ And the session name is unique
 When the user searches by this unique session name
 Then the specific session is displayed
 
-User story 5: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
+**User story 5**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
 Scenario 5: Searching for an known session by duration
 
