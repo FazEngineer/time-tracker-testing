@@ -22,7 +22,7 @@ jobs:
       
 
     - name: Cypress.io
-      command: npm --prefix ./cypress_automation run test
+      run: npm --prefix ./cypress_automation run test
 
     - name: Stop containers
       if: always()
