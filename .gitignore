@@ -1,0 +1,5 @@
+.vscode
+cypress_automation/node_modules
+cypress_automation/cypress/reports
+cypress_automation/cypress/screenshots
+cypress_automation/cypress/videos
