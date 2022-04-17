@@ -15,21 +15,21 @@
 
 **User story 1**: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.
 
-Scenario 1: Editing an existing session name
+| Scenario 1: Editing an existing session name
 
-Given there is an existing session on the View Saved Sessions page
-And the session contains a valid name 
-When the user updates the session name
-Then the new session name is displayed
+| Given there is an existing session on the View Saved Sessions page
+| And the session contains a valid name 
+| When the user updates the session name
+| Then the new session name is displayed
 
 **User story 2**: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
 
-Scenario 2: Editing an existing session duration
+| Scenario 2: Editing an existing session duration
 
-Given there is an existing session on the View Saved Sessions page
-And the session contains a valid duration
-When the user updates the session duration
-Then the new session duration is displayed
+| Given there is an existing session on the View Saved Sessions page
+| And the session contains a valid duration
+| When the user updates the session duration
+| Then the new session duration is displayed
 
 **User story 3**: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
 
