@@ -91,12 +91,12 @@ The test strategy is to start off with valid test cases then invalid test cases
 ## 3. End-to-end Automation Tests
 Based on bugs found above in the following file `timetracker-bugs.spec.js` 
 
-`root` -> `cypress_automation` -> `cypress` -> `integration`
+Located here `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 4. API Automation Tests
 File `api.spec.js` 
 
-`root` -> `cypress_automation` -> `cypress` -> `integration`
+Located here `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 5. Reporting 
 Reports are automatically generated after tests are run
@@ -111,7 +111,7 @@ Videos are automatically generated after test are run
 ## 6. Github actions
 `main.yml` file 
 
-`root` -> `github/workflows`
+Located here `root` -> `github/workflows`
 
 ## 7. Non-functional tests
 ### What is Accessibility?
@@ -124,7 +124,7 @@ Accessibility issues can cause a loss of users which in turn loss of money to th
 
 File `accessibility.spec.js`
 
-`root` -> `cypress_automation` -> `cypress` -> `integration`
+Located here `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 8. Executing all the automation test
 To execute all of the automation tests enter the following command in your vscode terminal
