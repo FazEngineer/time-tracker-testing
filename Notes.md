@@ -89,11 +89,13 @@ The test strategy is to start off with valid test cases then invalid test cases
 
 
 ## 3. End-to-end Automation Tests
-Based on bugs found above found in the following file `timetracker-bugs.spec.js` 
+Based on bugs found above in the following file `timetracker-bugs.spec.js` 
+
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 4. API Automation Tests
 File `api.spec.js` 
+
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 5. Reporting 
@@ -108,6 +110,7 @@ Videos are automatically generated after test are run
 
 ## 6. Github actions
 `main.yml` file 
+
 `root` -> `github/workflows`
 
 ## 7. Non-functional tests
@@ -120,6 +123,7 @@ Accessibility issues can cause a loss of users which in turn loss of money to th
 - Test how accessible the time tracker app is.
 
 File `accessibility.spec.js`
+
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 8. Executing all the automation test
