@@ -18,7 +18,7 @@ jobs:
         node-version: 17.x
 
     - name: Install dependencies
-      run: npm install --prefix ./cypress_automation/
+      run: npm install --prefix ./cypress_automation cypress
 
     - name: start npm
       run: npm start
