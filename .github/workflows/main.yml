@@ -20,9 +20,6 @@ jobs:
     - name: Install dependencies
       run: npm install --prefix ./cypress_automation cypress
 
-    - name: start npm
-      run: npm start
-
     - name: Run tests
       run: npm run test
 
