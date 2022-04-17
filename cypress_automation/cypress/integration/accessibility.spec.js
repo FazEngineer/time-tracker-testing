@@ -5,7 +5,7 @@ describe('time tracker application', () => {
     beforeEach(() => {
         homepage.navigate();
     });
-    it('should log any accessibility faliures', () => {
+    it('should log any accessibility failures', () => {
         cy.injectAxe();
         cy.checkA11y();
 
