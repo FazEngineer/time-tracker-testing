@@ -123,5 +123,5 @@ File `accessibility.spec.js`
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
 ## 8. Executing all the automation test
-Enter the following command in your vscode terminal
+To execute all of the automation tests enter the following command in your vscode terminal
 `npm run test`
