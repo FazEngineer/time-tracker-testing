@@ -88,11 +88,11 @@ The test strategy is to start off with valid test cases then invalid test cases
 |                                                            | Find by duration more than one existing session with partial match            |
 
 
-## 3. End-to-end automated tests
+## 3. End-to-end Automation Tests
 Based on bugs found above found in the following file `timetracker-bugs.spec.js` 
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
-## 4. API automated tests
+## 4. API Automation Tests
 File `api.spec.js` 
 `root` -> `cypress_automation` -> `cypress` -> `integration`
 
