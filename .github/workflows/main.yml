@@ -23,7 +23,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
-          # Specify Browser since container image is compile with chrome
+          #Specify Browser since container image is compile with chrome
           browser: chrome
 
     - name: Stop containers
