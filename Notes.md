@@ -13,10 +13,46 @@
 
 ## 2. Define and document the acceptance criteria and testing strategy 
 
-| Number | User Stories                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1      | p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}      User story: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.      Scenario 1: Editing an existing session name      Given there is an existing session on the View Saved Sessions page   And the session contains a valid name     When the user updates the session name   Then the new session name is displayed                                                                   |
-| 2      | p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}      User story: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.      Scenario 2: Editing an existing session duration      Given there is an existing session on the View Saved Sessions page   And the session contains a valid duration   When the user updates the session duration   Then the new session duration is displayed                                        |
-| 3      | p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}      User story: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page      Scenario 3: Deleting an existing session      Given there is an existing session on the View Saved Sessions page   When the user deletes the session   Then the session is not displayed                                                                                                             |
-| 4      | p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}      User story: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page      Scenario 4: Searching for an known session by name      Given there is an existing known session on the View Saved Sessions page   And the session name is unique   When the user searches by this unique session name   Then the specific session is displayed             |
-| 5      | p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}      User story: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page      Scenario 5: Searching for an known session by duration      Given there is an existing known session on the View Saved Sessions page   And the session duration is unique   When the user searches by this unique session duration   Then the specific session is displayed |
+User story 1: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.
+
+Scenario 1: Editing an existing session name
+
+Given there is an existing session on the View Saved Sessions page
+And the session contains a valid name 
+When the user updates the session name
+Then the new session name is displayed
+
+User story 2: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
+
+Scenario 2: Editing an existing session duration
+
+Given there is an existing session on the View Saved Sessions page
+And the session contains a valid duration
+When the user updates the session duration
+Then the new session duration is displayed
+
+User story 3: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
+
+Scenario 3: Deleting an existing session
+
+Given there is an existing session on the View Saved Sessions page
+When the user deletes the session
+Then the session is not displayed
+
+User story 4: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
+
+Scenario 4: Searching for an known session by name
+
+Given there is an existing known session on the View Saved Sessions page
+And the session name is unique
+When the user searches by this unique session name
+Then the specific session is displayed
+
+User story 5: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
+
+Scenario 5: Searching for an known session by duration
+
+Given there is an existing known session on the View Saved Sessions page
+And the session duration is unique
+When the user searches by this unique session duration
+Then the specific session is displayed
