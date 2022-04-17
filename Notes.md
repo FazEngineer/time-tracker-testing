@@ -15,25 +15,25 @@
 
 **User story 1**: As a user, I want to be able to edit an existing session name so that I will be able to update it with a new name.
 
-| Scenario 1: Editing an existing session name
+Scenario: Editing an existing session name
 
-| Given there is an existing session on the View Saved Sessions page
-| And the session contains a valid name 
-| When the user updates the session name
-| Then the new session name is displayed
+Given there is an existing session on the View Saved Sessions page
+And the session contains a valid name 
+When the user updates the session name
+Then the new session name is displayed
 
 **User story 2**: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
 
-| Scenario 2: Editing an existing session duration
+Scenario: Editing an existing session duration
 
-| Given there is an existing session on the View Saved Sessions page
-| And the session contains a valid duration
-| When the user updates the session duration
-| Then the new session duration is displayed
+Given there is an existing session on the View Saved Sessions page
+And the session contains a valid duration
+When the user updates the session duration
+Then the new session duration is displayed
 
 **User story 3**: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
 
-Scenario 3: Deleting an existing session
+Scenario: Deleting an existing session
 
 Given there is an existing session on the View Saved Sessions page
 When the user deletes the session
@@ -41,7 +41,7 @@ Then the session is not displayed
 
 **User story 4**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
-Scenario 4: Searching for an known session by name
+Scenario: Searching for an known session by name
 
 Given there is an existing known session on the View Saved Sessions page
 And the session name is unique
@@ -50,9 +50,78 @@ Then the specific session is displayed
 
 **User story 5**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
-Scenario 5: Searching for an known session by duration
+Scenario: Searching for an known session by duration
 
 Given there is an existing known session on the View Saved Sessions page
 And the session duration is unique
 When the user searches by this unique session duration
 Then the specific session is displayed
+
+
+The test strategy is to start off with valid test cases then invalid test cases
+
+| Scenarios                                                  | Test Cases                                                                    |
+|------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Scenario 1: Editing an existing session name**           | Update an existing session name to one that differs alphanumeric value        |
+|                                                            | Update an existing session name back to original name                         |
+|                                                            | Update an existing session name to an empty field                             |
+|                                                            | Update two existing session names to same name alphanumeric value             |
+|                                                            |                                                                               |
+| **Scenario 2: Editing an existing session duration**       | Update an existing session duration to one that differs numeric value only    |
+|                                                            | Update an existing session duration back to original duration                 |
+|                                                            | Update an existing session duration to an empty field                         |
+|                                                            | Update two existing session durations to same duration numeric values         |
+|                                                            | Update an existing session duration with text only                            |
+|                                                            |                                                                               |
+| **Scenario 3: Deleting an existing session**               | Remove a specific session from a list of sessions                             |
+|                                                            | Remove a specific session only one in list                                    |
+|                                                            | Remove multiple sessions                                                      |
+|                                                            |                                                                               |
+| **Scenario 4: Searching for an known session by name**     | Find by name an existing session                                              |
+|                                                            | Find by name a session that does not exist                                    |
+|                                                            | Find by name more than one existing session with same session name full match |
+|                                                            | Find by name more than one existing session with similar names partial match  |
+|                                                            |                                                                               |
+| **Scenario 5: Searching for an known session by duration** | Find by duration an existing session                                          |
+|                                                            | Find by duration a session that does not exist                                |
+|                                                            | Find by duration more than one existing session with same duration full match |
+|                                                            | Find by duration more than one existing session with partial match            |
+
+
+## 3. end-to-end automated tests
+Based on bugs found above found in the following file `timetracker-bugs.spec.js` 
+`root` -> `cypress_automation` -> `cypress` -> `integration`
+
+## 4. api automated tests
+File `api.spec.js` 
+`root` -> `cypress_automation` -> `cypress` -> `integration`
+
+## 5. Reporting 
+Reports are automatically generated after tests are run
+`root` -> `cypress_automation` -> `cypress` -> `reports`
+
+Screenshots are automatically generated after test are run
+`root` -> `cypress_automation` -> `cypress` -> `screenshots`
+
+Videos are automatically generated after test are run
+`root` -> `cypress_automation` -> `cypress` -> `videos`
+
+## 6. Github actions
+`main.yml` file 
+`root` -> `github/workflows`
+
+## 7. Non-functional tests
+### What is Accessibility?
+The practice of making a product that is usable by everyone, with or without a disability.
+This will enable more users who are able to use your product
+Accessibility issues can cause a loss of users which in turn loss of money to the business which is why it’s a serious issue that needs to be addressed.
+
+- Accessibility test with cypress-axe
+- Test how accessible the time tracker app is.
+
+File `accessibility.spec.js`
+`root` -> `cypress_automation` -> `cypress` -> `integration`
+
+## 8. Executing all the automation test
+Enter the following command in your vscode terminal
+`npm run test`
