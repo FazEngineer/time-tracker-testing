@@ -14,17 +14,17 @@ jobs:
       with:
         node-version: 17.x
 
-    - name: Install Cypress dependency
+    - name: Install cypress dependency
       run: npm install --prefix ./cypress_automation cypress
 
-    - name: Install Client dependency
+    - name: Install client dependency
       run: npm install --prefix ./client
 
     - name: Install api dependency
       run: npm install --prefix ./api
 
     - name: Start containers
-      run: docker-compose up
+      run: docker-compose -f "docker-compose.yml" up -d --build
       
     - name: Cypress test
       run: npm --prefix ./cypress_automation run test
