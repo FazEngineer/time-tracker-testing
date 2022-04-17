@@ -112,6 +112,7 @@ Videos are automatically generated after test are run
 `main.yml` file 
 
 Located here `root` -> `github/workflows`
+See `Actions` tab in Github repository for test workflow.
 
 ## 7. Non-functional tests
 ### What is Accessibility?
