@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { Homepage } from "../page_objects/homepage";
 
-describe('Reset', () => {
+describe('E2E test - Reset', () => {
     const homepage = new Homepage();
     beforeEach(() => {
         homepage.navigate();
@@ -14,7 +14,7 @@ describe('Reset', () => {
     })
 })
 
-describe('New Sessions', () => {
+describe('E2E test - New Sessions', () => {
     const homepage = new Homepage();
     beforeEach(() => {
         homepage.navigate();

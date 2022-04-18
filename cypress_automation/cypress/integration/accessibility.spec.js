@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 import { Homepage } from "../page_objects/homepage";
-describe('time tracker application', () => {
+describe('Accessibility test - time tracker application', () => {
     const homepage = new Homepage();
     beforeEach(() => {
         homepage.navigate();
