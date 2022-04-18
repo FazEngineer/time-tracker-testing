@@ -26,36 +26,36 @@ Then the new session name is displayed
 
 Scenario: Editing an existing session duration
 
-Given there is an existing session on the View Saved Sessions page
-And the session contains a valid duration
-When the user updates the session duration
-Then the new session duration is displayed
+Given there is an existing session on the View Saved Sessions page  
+And the session contains a valid duration  
+When the user updates the session duration  
+Then the new session duration is displayed  
 
 **User story 3**: As a user, I want to be able to delete an existing session so that I will be able to remove it from the View Saved Sessions page
 
 Scenario: Deleting an existing session
 
-Given there is an existing session on the View Saved Sessions page
-When the user deletes the session
-Then the session is not displayed
+Given there is an existing session on the View Saved Sessions page  
+When the user deletes the session  
+Then the session is not displayed  
 
 **User story 4**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
 Scenario: Searching for an known session by name
 
-Given there is an existing known session on the View Saved Sessions page
-And the session name is unique
-When the user searches by this unique session name
-Then the specific session is displayed
+Given there is an existing known session on the View Saved Sessions page  
+And the session name is unique  
+When the user searches by this unique session name  
+Then the specific session is displayed  
 
 **User story 5**: As a user, I want to be able to search for a specific session so that I will be able to find the session I am looking for on the View Saved Sessions page
 
 Scenario: Searching for an known session by duration
 
-Given there is an existing known session on the View Saved Sessions page
-And the session duration is unique
-When the user searches by this unique session duration
-Then the specific session is displayed
+Given there is an existing known session on the View Saved Sessions page  
+And the session duration is unique  
+When the user searches by this unique session duration  
+Then the specific session is displayed  
 
 
 The test strategy is to start off with valid test cases then invalid test cases
