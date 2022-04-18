@@ -17,10 +17,10 @@
 
 Scenario: Editing an existing session name
 
-Given there is an existing session on the View Saved Sessions page
-And the session contains a valid name 
-When the user updates the session name
-Then the new session name is displayed
+Given there is an existing session on the View Saved Sessions page  
+And the session contains a valid name   
+When the user updates the session name  
+Then the new session name is displayed  
 
 **User story 2**: As a user, I want to be able to edit an existing session duration so that I will be able to update it with a new time duration.
 
