@@ -24,6 +24,11 @@ export class Homepage {
     }
 
     successMessage() {
-        cy.get('.jumbotron').contains('You have successfully added a session');
+        cy.on('window:alert', (alertText) => {
+            //window:alert is the event which get fired on alert open
+            expect(alertText).to.have.string('Your session has been saved');
+            cy.get('[name="alert"]').click();
+        });
+
     }
 }
