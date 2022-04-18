@@ -19,7 +19,7 @@ describe('New Sessions', () => {
     beforeEach(() => {
         homepage.navigate();
     });
-    it('bug 2: no new session is created and saved', () => {
+    it('bug 2: new session is created and saved with error', () => {
         homepage.selectStart();
         homepage.fillSessionName(' ');
         homepage.selectStop();
@@ -27,7 +27,7 @@ describe('New Sessions', () => {
         homepage.successMessage();
     });
 
-    it('bug 3: no new session is created and saved', () => {
+    it('bug 3: new session is created and saved with error', () => {
         homepage.selectStart();
         homepage.fillSessionName(' ');
         homepage.selectReset();
@@ -35,7 +35,7 @@ describe('New Sessions', () => {
         homepage.successMessage();
     });
 
-    it('bug 4: no new session is created and saved', () => {
+    it('bug 4: new session is created and saved with error', () => {
         homepage.selectStart();
         homepage.fillSessionName('bug4');
         homepage.selectStop();
@@ -43,7 +43,7 @@ describe('New Sessions', () => {
         homepage.successMessage();
     });
 
-    it('bug 5: no new session is created and saved', () => {
+    it('bug 5: new session is created and saved with error', () => {
         homepage.selectStart();
         homepage.fillSessionName('bug5');
         homepage.selectReset();
