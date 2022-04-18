@@ -14,7 +14,7 @@ describe('E2E test - Reset', () => {
     })
 })
 
-describe('E2E test - New Sessions', () => {
+describe('E2E tests - New Sessions', () => {
     const homepage = new Homepage();
     beforeEach(() => {
         homepage.navigate();

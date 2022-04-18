@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe('Testing API Endpoint', () => {
+describe('API tests - Endpoints', () => {
     it('Test GET Request', function () {
         cy.request({
             method: 'GET',
